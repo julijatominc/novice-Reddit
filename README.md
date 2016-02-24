@@ -1,5 +1,5 @@
-# novice-Reddit
-Projekt pri predmetu PROGRAMIRANJE 1
+﻿# novice-Reddit
+##Projekt pri predmetu PROGRAMIRANJE 1
 
 Pri predmetu sem se odločila analizirati dve podstrani spletne strani Reddit. Na r/news in r/worldnews so objavljene povezave do različnih spletnih virov novic. Zanimalo me je, kateri viri prevladujejo na kateri podstrani, katere novice so najbolj popularne in najbolj komentirane.
 
