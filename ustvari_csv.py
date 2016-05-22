@@ -3,7 +3,7 @@ import json
 import csv
 
 url2='https://www.reddit.com/r/news/controversial/.json?sort=controversial&t=all'
-pot2='C:/Users/Julija/Desktop/prog1_projekt/news_con1.csv'
+pot2='C:/Users/Julija/Desktop/prog1_projekt/news_con.csv'
 
 url3='https://www.reddit.com/r/news/top/.json?sort=top&t=all'
 pot3='C:/Users/Julija/Desktop/prog1_projekt/news_top.csv'
@@ -39,7 +39,7 @@ def SEZNAMnovic(url):
     a='&after='
     head=seznamnovic1(url)
     sez=head[0]
-    while len(sez)<575:
+    while len(sez)<600:
         head=seznamnovic1(url+a+head[1])
         sez=sez+head[0]
     else:
@@ -55,6 +55,6 @@ def zapisi_tabelo(slovarji,pot):
             writer.writerow(slovar)
             
 zapisi_tabelo(SEZNAMnovic(url2),pot2)
-zapisi_tabelo(SEZNAMnovic(url4),pot4)
-zapisi_tabelo(SEZNAMnovic(url3),pot3)
-zapisi_tabelo(SEZNAMnovic(url5),pot5)
+#zapisi_tabelo(SEZNAMnovic(url4),pot4)
+#zapisi_tabelo(SEZNAMnovic(url3),pot3)
+#zapisi_tabelo(SEZNAMnovic(url5),pot5)
